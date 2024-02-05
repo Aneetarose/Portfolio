@@ -1,0 +1,105 @@
+
+
+.image-container {
+    position: relative;
+  }
+  
+  .white {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    text-align: center;
+    text-decoration: wavy;
+    font-size: xx-large;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-style: oblique;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    padding: 10px;
+  }
+  body
+  {
+    background-image: url(./images/13295064_5172658.jpg);
+    background_size:cover no_repeat
+  }
+
+
+
+
+  #scroll-container {
+    border: 3px solid white;
+    border-radius: 5px;
+    height: 100px;
+    overflow: hidden;
+  }
+  
+  #scroll-text {
+    height: 100%;
+    text-align: center;
+    text-emphasis-color: white;
+    
+    /* animation properties */
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    
+    -moz-animation: my-animation 5s linear infinite;
+    -webkit-animation: my-animation 5s linear infinite;
+    animation: my-animation 5s linear infinite;
+  }
+  
+  /* for Firefox */
+  @-moz-keyframes my-animation {
+    from { -moz-transform: translateY(100%); }
+    to { -moz-transform: translateY(-100%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateY(100%); }
+    to { -webkit-transform: translateY(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateY(100%);
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+    }
+    to {
+      -moz-transform: translateY(-100%);
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+    }
+  }
+
+  .white{
+    color: white;
+  }
+
+  .details
+  {
+        color:black;
+        display: flex;
+        justify-content: center;
+        background-color:whitesmoke;
+         height:200px; 
+         width: 500px;
+         
+        
+  }
+
+  .pic
+  {
+        border-radius: 100%;
+        width: 150px; 
+        height: 150px; 
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+  }
+
+  
